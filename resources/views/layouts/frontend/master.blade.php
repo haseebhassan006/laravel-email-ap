@@ -21,14 +21,20 @@
   </head>
   <body>
 
+    @livewireStyles
+    
+  </head>
+  <body>
+     
+
+
     @include('layouts.frontend.components.header')
 
     @yield('content')
 
     <!-- Footer -->
-    @include('layouts.frontend.components.footer')
    @livewireScripts
-    <!-- Footer -->
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{asset('frontend/assets/slick-slider/slick/slick.min.js')}}"></script>
@@ -39,3 +45,5 @@
     <script src="{{asset('frontend/assets/js/app.min.js')}}"></script>
   </body>
 </html>
+
+
